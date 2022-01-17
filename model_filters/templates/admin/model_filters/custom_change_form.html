@@ -1,0 +1,17 @@
+{% extends change_form_template %}
+
+{% load i18n %}
+
+{% block extrahead %}
+    {{ block.super }}
+    <script type="text/javascript"
+            charset="utf-8">
+        var _MF_OPERATOR_MAP = {{ field_operators | safe }};
+        var _MF_VALUE_MAP = {{ field_values | safe }};
+    </script>
+{% endblock %}
+
+{% block after_related_objects %}
+    {{ block.super }}
+    {% include adminform.form.help_template %}
+{% endblock %}

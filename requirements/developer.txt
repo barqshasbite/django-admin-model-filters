@@ -1,0 +1,7 @@
+-r test.txt
+-r codestyle.txt
+-r flake8.txt
+-r pylint.txt
+-r build.txt
+
+Django==3.2.10

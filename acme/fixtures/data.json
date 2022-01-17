@@ -1,0 +1,408 @@
+[
+{
+    "model": "core.product",
+    "pk": 1,
+    "fields": {
+        "name": "Anvil",
+        "description": "",
+        "width": "10.00",
+        "height": "10.00",
+        "depth": "10.00",
+        "weight": 200.0,
+        "min_age": 0,
+        "invented": "1947-07-17",
+        "released": "1947-07-17T00:00:00Z",
+        "flammable": false,
+        "explosive": false,
+        "serial_number": "9e40cd2d-ad7c-4311-af65-df19d7c7954e",
+        "parts": []
+    }
+},
+{
+    "model": "core.product",
+    "pk": 2,
+    "fields": {
+        "name": "Rocket-Powered Roller Skates",
+        "description": "Let you skate at unlimited speed",
+        "width": "5.00",
+        "height": "5.00",
+        "depth": "15.00",
+        "weight": 8.0,
+        "min_age": 18,
+        "invented": "1945-03-27",
+        "released": "1945-03-27T00:00:00Z",
+        "flammable": true,
+        "explosive": true,
+        "serial_number": "4c70e18e-697a-4598-943b-fd372e7851fe",
+        "parts": []
+    }
+},
+{
+    "model": "core.product",
+    "pk": 3,
+    "fields": {
+        "name": "Nitroglycerin",
+        "description": "HANDLE WITH EXTREME CARE!",
+        "width": "50.00",
+        "height": "50.00",
+        "depth": "50.00",
+        "weight": 1000.0,
+        "min_age": 21,
+        "invented": "1927-07-17",
+        "released": "1927-09-17T00:00:00Z",
+        "flammable": true,
+        "explosive": true,
+        "serial_number": "de25db1f-23db-46c4-9753-7de2073b5677",
+        "parts": []
+    }
+},
+{
+    "model": "core.product",
+    "pk": 4,
+    "fields": {
+        "name": "Triple-Strength Fortified Leg Muscle Vitamins",
+        "description": "Gives your legs the vitamins it needs to run faster than ever before!",
+        "width": "4.00",
+        "height": "4.00",
+        "depth": "2.00",
+        "weight": 2.0,
+        "min_age": 5,
+        "invented": "1957-01-12",
+        "released": "1958-01-12T00:00:00Z",
+        "flammable": false,
+        "explosive": false,
+        "serial_number": "3cc06b3d-68c6-4e35-aee2-75e7fe5c8ec7",
+        "parts": []
+    }
+},
+{
+    "model": "core.product",
+    "pk": 5,
+    "fields": {
+        "name": "Female Road Runner Costume",
+        "description": "Lets you disguise yourself as a female Road Runner, just watch out for other Coyotes.",
+        "width": "10.00",
+        "height": "3.00",
+        "depth": "10.00",
+        "weight": 5.0,
+        "min_age": 10,
+        "invented": "1945-03-27",
+        "released": "1945-03-27T00:00:00Z",
+        "flammable": false,
+        "explosive": false,
+        "serial_number": "21da0e71-a803-4f04-b41e-b16ffd104933",
+        "parts": []
+    }
+},
+{
+    "model": "core.product",
+    "pk": 6,
+    "fields": {
+        "name": "Smoke Screen Bomb",
+        "description": "Creates a cloud of smoke, like fog, for camouflage.",
+        "width": "5.00",
+        "height": "5.00",
+        "depth": "5.00",
+        "weight": 5.0,
+        "min_age": 18,
+        "invented": "1945-03-27",
+        "released": "1947-07-17T00:00:00Z",
+        "flammable": false,
+        "explosive": true,
+        "serial_number": "9629f198-cf78-451d-a2b2-a98172db31a0",
+        "parts": []
+    }
+},
+{
+    "model": "core.product",
+    "pk": 7,
+    "fields": {
+        "name": "Triple-Strength Battleship Steel Armor Plate",
+        "description": "Usually it would fend off most objects, but not Road Runners",
+        "width": "50.00",
+        "height": "50.00",
+        "depth": "2.00",
+        "weight": 100.0,
+        "min_age": 18,
+        "invented": "1917-04-08",
+        "released": "1917-04-08T00:00:00Z",
+        "flammable": false,
+        "explosive": false,
+        "serial_number": "435e27dd-95be-410f-bc2e-171d812dd385",
+        "parts": []
+    }
+},
+{
+    "model": "core.product",
+    "pk": 8,
+    "fields": {
+        "name": "Do-It-Yourself Tornado Kit",
+        "description": "Lets you \"seed\" your own tornadoes",
+        "width": "60.00",
+        "height": "60.00",
+        "depth": "60.00",
+        "weight": 20.0,
+        "min_age": 18,
+        "invented": "1917-04-08",
+        "released": "1917-05-08T00:00:00Z",
+        "flammable": false,
+        "explosive": null,
+        "serial_number": "412bf605-f3f7-4330-ad7e-e9fcda1693a6",
+        "parts": [
+            1,
+            4
+        ]
+    }
+},
+{
+    "model": "core.product",
+    "pk": 9,
+    "fields": {
+        "name": "Jet Bike (Kit)",
+        "description": "Like a motorcycle, but without wheels.",
+        "width": "12.00",
+        "height": "12.00",
+        "depth": "60.00",
+        "weight": 100.0,
+        "min_age": 16,
+        "invented": "1945-03-27",
+        "released": "1945-03-27T00:00:00Z",
+        "flammable": false,
+        "explosive": true,
+        "serial_number": "eaa63f74-941d-4efd-bd15-1596738c89b3",
+        "parts": [
+            2,
+            3
+        ]
+    }
+},
+{
+    "model": "core.part",
+    "pk": 1,
+    "fields": {
+        "name": "Tornado Seeds",
+        "description": "Part of the Tornado Kit",
+        "part_number": "58c9954c-df47-42b6-8087-6be681d2544e",
+        "material": 3,
+        "version": 1,
+        "weight": 5.0
+    }
+},
+{
+    "model": "core.part",
+    "pk": 2,
+    "fields": {
+        "name": "Handle Bars",
+        "description": "Part of the Jet Bike Kit",
+        "part_number": "b83b3044-6b99-4e66-9999-f974c6017b98",
+        "material": 2,
+        "version": 1,
+        "weight": 5.0
+    }
+},
+{
+    "model": "core.part",
+    "pk": 3,
+    "fields": {
+        "name": "Jet Motor",
+        "description": "Part of the Jet Bike Kit",
+        "part_number": "68679150-e8fb-4463-a535-46ec8cc23632",
+        "material": 2,
+        "version": 1,
+        "weight": 30.0
+    }
+},
+{
+    "model": "core.part",
+    "pk": 4,
+    "fields": {
+        "name": "Water Pistol",
+        "description": "A Basic Squirt Gun Toy, part of the Tornado Kit",
+        "part_number": "1cfe714a-56b7-4bf4-9572-2602779beb82",
+        "material": 2,
+        "version": 1,
+        "weight": 5.0
+    }
+},
+{
+    "model": "core.customer",
+    "pk": 1,
+    "fields": {
+        "name": "Bugs Bunny",
+        "email": "bugs@example.com",
+        "first_seen": "1940-07-27T00:00:00Z",
+        "membership": "platinum"
+    }
+},
+{
+    "model": "core.customer",
+    "pk": 2,
+    "fields": {
+        "name": "Road Runner",
+        "email": "runner@example.com",
+        "first_seen": "1949-09-17T00:00:00Z",
+        "membership": "regular"
+    }
+},
+{
+    "model": "core.customer",
+    "pk": 3,
+    "fields": {
+        "name": "Wile E Coyote",
+        "email": "wile@example.com",
+        "first_seen": "1949-09-17T00:00:00Z",
+        "membership": "platinum"
+    }
+},
+{
+    "model": "core.customer",
+    "pk": 4,
+    "fields": {
+        "name": "Marvin the Martian",
+        "email": "marv@example.com",
+        "first_seen": "1948-07-24T00:00:00Z",
+        "membership": "regular"
+    }
+},
+{
+    "model": "core.customer",
+    "pk": 5,
+    "fields": {
+        "name": "Daffy Duck",
+        "email": "daffy@example.com",
+        "first_seen": "1937-04-17T00:00:00Z",
+        "membership": "regular"
+    }
+},
+{
+    "model": "core.customer",
+    "pk": 6,
+    "fields": {
+        "name": "Porky Pig",
+        "email": "porky@example.com",
+        "first_seen": "1935-03-01T00:00:00Z",
+        "membership": "regular"
+    }
+},
+{
+    "model": "core.purchase",
+    "pk": 1,
+    "fields": {
+        "customer": 1,
+        "product": 1,
+        "quantity": 5,
+        "price": "10.00",
+        "total": "50.00"
+    }
+},
+{
+    "model": "core.purchase",
+    "pk": 2,
+    "fields": {
+        "customer": 1,
+        "product": 3,
+        "quantity": 2,
+        "price": "100.00",
+        "total": "200.00"
+    }
+},
+{
+    "model": "core.purchase",
+    "pk": 3,
+    "fields": {
+        "customer": 1,
+        "product": 6,
+        "quantity": 10,
+        "price": "8.00",
+        "total": "80.00"
+    }
+},
+{
+    "model": "core.purchase",
+    "pk": 4,
+    "fields": {
+        "customer": 5,
+        "product": 4,
+        "quantity": 1,
+        "price": "100.00",
+        "total": "100.00"
+    }
+},
+{
+    "model": "core.purchase",
+    "pk": 5,
+    "fields": {
+        "customer": 2,
+        "product": 7,
+        "quantity": 5,
+        "price": "99.00",
+        "total": "495.00"
+    }
+},
+{
+    "model": "core.purchase",
+    "pk": 6,
+    "fields": {
+        "customer": 3,
+        "product": 2,
+        "quantity": 1,
+        "price": "500.00",
+        "total": "500.00"
+    }
+},
+{
+    "model": "core.purchase",
+    "pk": 7,
+    "fields": {
+        "customer": 3,
+        "product": 4,
+        "quantity": 1,
+        "price": "200.00",
+        "total": "200.00"
+    }
+},
+{
+    "model": "core.purchase",
+    "pk": 8,
+    "fields": {
+        "customer": 3,
+        "product": 5,
+        "quantity": 1,
+        "price": "199.99",
+        "total": "199.99"
+    }
+},
+{
+    "model": "core.purchase",
+    "pk": 9,
+    "fields": {
+        "customer": 2,
+        "product": 6,
+        "quantity": 1,
+        "price": "100.00",
+        "total": "100.00"
+    }
+},
+{
+    "model": "core.purchase",
+    "pk": 10,
+    "fields": {
+        "customer": 3,
+        "product": 1,
+        "quantity": 1,
+        "price": "5.00",
+        "total": "5.00"
+    }
+},
+{
+    "model": "core.purchase",
+    "pk": 11,
+    "fields": {
+        "customer": 3,
+        "product": 8,
+        "quantity": 1,
+        "price": "999.99",
+        "total": "999.99"
+    }
+}
+]

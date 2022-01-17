@@ -1,0 +1,52 @@
+{% load i18n %}
+
+<div class="grp-module mf-help-container">
+    <h2>{% trans "Help" %}</h2>
+    <div class="mf-help-section">
+        <p class="mf-help-title">{% trans "Using OR Separators" %}</p>
+        <p>
+            {% blocktrans %}
+                By default, each field filter is combined using <span class="mf-code">AND</span>.
+                To use <span class="mf-code">OR</span>, you have to use the OR separator field <span class="mf-code">--- OR ---</span>.
+                Place it between the fields, or groups of fields, you wish to OR together.
+            {% endblocktrans %}
+        </p>
+    </div>
+    <div class="mf-help-section">
+        <p class="mf-help-title">{% trans "Date/DateTime Fields" %}</p>
+        <p>
+            {% blocktrans %}
+                For date or datetime field filtering, use the format <span class="mf-code">YYYY-MM-DD [HH:MM[:ss[.uuuuuu]][TZ]]</span>,
+                where the <span class="mf-code">[</span> and <span class="mf-code">]</span> brackets indicate optional parts of the value.
+            {% endblocktrans %}
+        </p>
+        <p>
+            {% blocktrans %}
+                Note that datetime fields can be timezone naive, or timezone aware. If they are timezone aware, you will be asked to provide a timezone offset.
+            {% endblocktrans %}
+        </p>
+        <p>{% trans "For example:" %}</p>
+        <ul>
+            <li>
+                {% blocktrans %}
+                    A specific day: <span class="mf-code">2021-01-01</span>
+                {% endblocktrans %}
+            </li>
+            <li>
+                {% blocktrans %}
+                    A specific day and time, in UTC short form: <span class="mf-code">2021-01-01 16:30:00Z</span>
+                {% endblocktrans %}
+            </li>
+            <li>
+                {% blocktrans %}
+                    A specific day and time, with UTC offset: <span class="mf-code">2021-01-01 16:30:00+0000</span>
+                {% endblocktrans %}
+            </li>
+            <li>
+                {% blocktrans %}
+                    A specific day and time, with EST offset: <span class="mf-code">2021-01-01 16:30:00-0500</span>
+                {% endblocktrans %}
+            </li>
+        </ul>
+    </div>
+</div>

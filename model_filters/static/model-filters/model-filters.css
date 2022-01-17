@@ -1,0 +1,72 @@
+.mf-help-container {
+	margin-top: 10px;
+	display: block;
+	float: inherit;
+}
+
+.mf-help-section {
+	padding: 10px;
+}
+
+.mf-help-section ul {
+	padding-left: 20px
+}
+
+.mf-help-section ul>li {
+	list-style: initial;
+	padding-bottom: 3px;
+	padding-top: 3px;
+}
+
+.mf-help-section p {
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.mf-help-title {
+	font-weight: bold;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.mf-code {
+	font-family: monospace;
+	background: #bdbdbd;
+  	word-wrap: break-word;
+	box-decoration-break: clone;
+  	padding: .1rem .3rem .2rem;
+  	border-radius: .2rem;
+}
+
+.mf-submit-button-list {
+	padding-left: 0;
+}
+
+.mf-submit-button-list > li {
+	list-style-image: none;
+	list-style-type: none;
+}
+
+.mf-float-left {
+	float: left;
+}
+
+.mf-float-right {
+	float: right;
+}
+
+.mf-deletelink {
+	margin-left: 8px;
+}
+
+.submit-row input.deletelink {
+    display: block;
+    background: var(--delete-button-bg); ;
+    padding: 10px 15px; ;
+}
+
+.submit-row input.deletelink:focus,
+.submit-row input.deletelink:hover,
+.submit-row input.deletelink:active {
+    background: var(--delete-button-hover-bg);
+}

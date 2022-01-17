@@ -1,0 +1,6 @@
+[flake8]
+exclude = .eggs,.tox,build,dist,django-admin-model-filters.egg-info,*/migrations,*/settings
+max-line-length = 80
+select = C,E,F,W,B,B950,I
+ignore = E203,E501,W503
+isort_show_traceback = true

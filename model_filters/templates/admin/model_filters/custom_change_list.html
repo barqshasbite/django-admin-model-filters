@@ -1,0 +1,31 @@
+{% extends change_list_template %}
+
+{% load i18n %}
+
+{% block object-tools-items %}
+    {{ block.super }}
+    <li>
+        <a class="addlink grp-add-link"
+           href="{% url 'admin:model_filters_modelfilter_add' %}?content_type={{ content_type.id }}"
+           title="{% trans 'Create a new model filter.' %}">
+            {% trans "New Filter" %}
+        </a>
+    </li>
+    {# Deprecated: Remove 'preserved_filters' check when Django 2.2 support is dropped. #}
+    {% if cl.has_active_filters or cl.preserved_filters %}
+        {% if can_change_filter %}
+            <li>
+                <a href="{% url 'admin:model_filters_modelfilter_change' current_model_filter %}"
+                   title="{% trans 'Edit the current model filter.' %}">
+                    {% trans "Edit Filter" %}
+                </a>
+            </li>
+        {% endif %}
+        <li>
+            <a href="{{ request.path }}"
+               title="{% trans 'Clear the current model filter.' %}">
+                {% trans "Clear Filters" %}
+            </a>
+        </li>
+    {% endif %}
+{% endblock object-tools-items %}

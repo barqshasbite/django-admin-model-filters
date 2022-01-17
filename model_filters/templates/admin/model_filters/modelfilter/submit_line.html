@@ -1,0 +1,58 @@
+{% load i18n %}
+{% load admin_urls %}
+
+<div class="submit-row grp-module grp-submit-row grp-fixed-footer">
+    <header style="display:none"><h1>Submit Options</h1></header>
+    <ul class="mf-submit-button-list">
+        {% if not adminform.form.instance.pk %}
+            <li class="grp-float-left mf-float-left">
+                {% if using_grappelli %}
+                    <button type="submit"
+                            value="{% trans 'Apply without save' %}"
+                            title="{% trans 'Go to the results of the model filter, then delete it.' %}"
+                            class="grp-button grp-delete-link"
+                            name="_applydiscard">{% trans 'Apply without save' %}</button>
+                {% else %}
+                    <input type="submit"
+                           value="{% trans 'Apply without save' %}"
+                           title="{% trans 'Go to the results of the model filter, then delete it.' %}"
+                           class="deletelink grp-button grp-delete-link"
+                           name="_applydiscard"/>
+                {% endif %}
+            </li>
+        {% endif %}
+        {% if show_delete_link %}
+            {% url opts|admin_urlname:'delete' original.pk|admin_urlquote as delete_url %}
+            <li class="grp-float-left mf-float-left">
+                <p class="deletelink-box">
+                    <a href="{% add_preserved_filters delete_url %}"
+                       class="deletelink grp-button grp-delete-link">{% trans "Delete" %}</a>
+                </p>
+            </li>
+            {% if apply_filter_url %}
+                <li class="grp-float-left mf-float-left">
+                    <a class="mf-deletelink deletelink grp-button grp-delete-link"
+                       href="{{ apply_filter_url }}"
+                       title="{% trans 'Discard any changes made to the filter and go back to the filter results.' %}">
+                        {% trans 'Discard changes and apply' %}
+                    </a>
+                </li>
+            {% endif %}
+        {% endif %}
+        {% if show_save %}
+            <li class="mf-float-right">
+                <input name="_saveapply"
+                       type="submit"
+                       title="{% trans 'Save the model filter and go to the filter results.' %}"
+                       class="default grp-button grp-default"
+                       value="{% trans 'Save and apply' %}"></li>
+        {% endif %}
+        {% if show_save_and_continue %}
+            <li class="mf-float-right">
+                <input type="submit"
+                       value="{% trans 'Save and continue editing' %}"
+                       class="grp-button"
+                       name="_continue"/></li>
+        {% endif %}
+    </ul>
+</div>
