@@ -9,6 +9,12 @@ from django.utils.translation import gettext_lazy as _
 class FieldFilter(models.Model):
     """A field filter configuration for a model filter."""
 
+    id = models.BigAutoField(
+        _("ID"),
+        auto_created=True,
+        primary_key=True,
+        serialize=False,
+    )
     model_filter = models.ForeignKey(
         "model_filters.ModelFilter",
         verbose_name=_("model filter"),

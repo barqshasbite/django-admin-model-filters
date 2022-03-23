@@ -14,6 +14,12 @@ from model_filters.managers import ModelFilterQuerySet
 class ModelFilter(models.Model):
     """A model filter."""
 
+    id = models.BigAutoField(
+        _("ID"),
+        auto_created=True,
+        primary_key=True,
+        serialize=False,
+    )
     name = models.CharField(
         _("name"),
         max_length=1024,
